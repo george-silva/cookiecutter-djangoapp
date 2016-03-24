@@ -2,9 +2,6 @@
 cookiecutter-djangopackage
 ==========================
 
-.. image:: https://travis-ci.org/pydanny/cookiecutter-djangopackage.svg?branch=master
-    :target: https://travis-ci.org/pydanny/cookiecutter-djangopackage
-
 ---------------
 Friendly notice
 ---------------
@@ -123,33 +120,3 @@ It will answer with something like::
           git push --tags
 
 Go ahead and follow those instructions.
-
-Add to Django Packages
-~~~~~~~~~~~~~~~~~~~~~~~
-
-Once you have a release, and assuming you have an account there, just go to https://www.djangopackages.com/packages/add/ and add it there.
-
-
-Follows Best Practices
-~~~~~~~~~~~~~~~~~~~~~~~
-
-.. image:: http://twoscoops.smugmug.com/Two-Scoops-Press-Media-Kit/i-C8s5jkn/0/O/favicon-152.png
-   :name: Two Scoops Logo
-   :align: center
-   :alt: Two Scoops of Django
-   :target: http://twoscoopspress.org/products/two-scoops-of-django-1-8
-
-This project follows best practices as espoused in `Two Scoops of Django: Best Practices for Django 1.8`_.
-
-.. _`Two Scoops of Django: Best Practices for Django 1.8`: http://twoscoopspress.org/products/two-scoops-of-django-1-8
-
-Support This Project
---------------------
-
-This project is maintained by volunteers. Support their efforts by spreading the word about:
-
-.. image:: https://s3.amazonaws.com/tsacademy/images/tsa-logo-250x60-transparent-01.png
-   :name: Two Scoops Academy
-   :align: center
-   :alt: Two Scoops Academy
-   :target: http://www.twoscoops.academy/
