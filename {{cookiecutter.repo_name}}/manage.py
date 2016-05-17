@@ -1,10 +1,13 @@
 import sys
+import os
+from django.core.management import call_command
 
 try:
     from django.conf import settings
     from django.test.utils import get_runner
 
     settings.configure(
+        BASE_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
         DEBUG=True,
         USE_TZ=True,
         DATABASES={
@@ -37,6 +40,10 @@ except ImportError:
     raise ImportError("To fix this error, run: pip install -r requirements-test.txt")
 
 
+def makemigrations():
+    call_command("makemigrations", "{{ cookiecutter.app_name }}")
+
+
 def run_tests(*test_args):
     if not test_args:
         test_args = ['tests']
@@ -52,4 +59,12 @@ def run_tests(*test_args):
 
 
 if __name__ == '__main__':
-    run_tests(*sys.argv[1:])
+
+    if len(sys.argv) < 2:
+        print "not enough arguments. arguments available: test, makemigrations"
+    command = sys.argv[1].lower()
+    if command == "test":
+        run_tests(*sys.argv[2:])
+
+    if command == "makemigrations":
+        makemigrations()
