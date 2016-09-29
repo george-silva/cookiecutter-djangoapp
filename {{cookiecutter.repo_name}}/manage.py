@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import sys
 import os
 from django.core.management import call_command
